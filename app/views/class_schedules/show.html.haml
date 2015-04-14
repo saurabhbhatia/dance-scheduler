@@ -22,6 +22,11 @@
   %b Status:
   = @class_schedule.status
 
+%p
+  %b Attendees
+  - @class_schedule.attendees.each do |attendee|
+    = attendee.name
+
 = link_to 'Edit', edit_class_schedule_path(@class_schedule)
 \|
 = link_to 'Back', class_schedules_path

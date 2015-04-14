@@ -1,0 +1,20 @@
+= form_for @attendee do |f|
+  - if @attendee.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@attendee.errors.count, "error")} prohibited this attendee from being saved:"
+      %ul
+        - @attendee.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :email
+    = f.email_field :email
+
+  .field
+    - @class_schedule = params[:class_schedule_id].to_i
+    = hidden_field_tag "class_schedule_id", @class_schedule
+  .actions
+    = f.submit 'Save'

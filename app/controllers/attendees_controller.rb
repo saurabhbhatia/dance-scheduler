@@ -6,8 +6,8 @@ class AttendeesController < ApplicationController
   end
 
   def create
-    @attendee = Attendee.new(attendee_params)
-
+    @class_schedule = ClassSchedule.find(params[:class_schedule_id])
+    @attendee = @class_schedule.attendees.new(attendee_params)
     respond_to do |format|
       if @attendee.save
         format.html { redirect_to @attendee, notice: 'Attendee was successfully created.' }
