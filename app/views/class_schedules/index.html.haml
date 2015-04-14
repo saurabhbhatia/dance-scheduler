@@ -6,6 +6,7 @@
       %th Title
       %th Date
       %th Instructor
+      %th Instructor Bio
       %th Start time
       %th End time
       %th Spots
@@ -19,7 +20,8 @@
       %tr
         %td= class_schedule.title
         %td= class_schedule.date
-        %td= class_schedule.instructor_id
+        %td= class_schedule.instructor.name
+        %td= class_schedule.instructor.bio
         %td= class_schedule.start_time
         %td= class_schedule.end_time
         %td= class_schedule.spots
