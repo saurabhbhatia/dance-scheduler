@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -10,6 +9,8 @@ Rails.application.routes.draw do
   resources :class_schedules
   
   devise_for :users
+
+  resources :attendees, except: [:index, :show]
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

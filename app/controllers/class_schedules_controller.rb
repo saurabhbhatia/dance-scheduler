@@ -1,5 +1,5 @@
 class ClassSchedulesController < ApplicationController
-  before_action :set_event, only: [:show, :edit, :update, :destroy]
+  before_action :set_class_schedule, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:new, :edit, :destroy]
   def new
     @class_schedule = ClassSchedule.new
@@ -51,7 +51,7 @@ class ClassSchedulesController < ApplicationController
 
   private 
 
-  def set_event
+  def set_class_schedule
     @class_schedule = ClassSchedule.find(params[:id])
   end
 
