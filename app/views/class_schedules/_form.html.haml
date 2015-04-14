@@ -1,0 +1,29 @@
+= form_for @class_schedule do |f|
+  - if @class_schedule.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@class_schedule.errors.count, "error")} prohibited this class_schedule from being saved:"
+      %ul
+        - @class_schedule.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :date
+    = f.datetime_select :date
+  .field
+    = f.label :instructor_id
+    = f.text_field :instructor_id
+  .field
+    = f.label :start_time
+    = f.time_select :start_time
+  .field
+    = f.label :end_time
+    = f.time_select :end_time
+  .field
+    = f.label :spots
+    = f.number_field :spots
+
+  .actions
+    = f.submit 'Save'

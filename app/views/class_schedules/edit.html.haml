@@ -1,2 +1,7 @@
-%h1 ClassSchedules#edit
-%p Find me in app/views/class_schedules/edit.html.haml
+%h1 Editing Class Schedule
+
+= render 'form'
+
+= link_to 'Show', @class_schedule
+\|
+= link_to 'Back', class_schedules_path

@@ -1,8 +1,33 @@
-%h1 ClassSchedules#index
-- @class_schedules.each do |class_schedule|
-  = class_schedule.title
-  = class_schedule.date
-  = class_schedule.start_time
-  = class_schedule.end_time
-  = class_schedule.instructor.name
-  = class_schedule.instructor.bio
+%h1 Listing Class Schedules
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Date
+      %th Instructor
+      %th Start time
+      %th End time
+      %th Spots
+      %th Status
+      %th
+      %th
+      %th
+
+  %tbody
+    - @class_schedules.each do |class_schedule|
+      %tr
+        %td= class_schedule.title
+        %td= class_schedule.date
+        %td= class_schedule.instructor_id
+        %td= class_schedule.start_time
+        %td= class_schedule.end_time
+        %td= class_schedule.spots
+        %td= class_schedule.status
+        %td= link_to 'Show', class_schedule
+        %td= link_to 'Edit', edit_class_schedule_path(class_schedule)
+        %td= link_to 'Destroy', class_schedule, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New class_schedule', new_class_schedule_path

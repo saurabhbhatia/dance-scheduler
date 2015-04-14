@@ -1,0 +1,1 @@
+json.extract! @class_schedule, :id, :title, :date, :instructor_id, :start_time, :end_time, :spots, :status, :created_at, :updated_at

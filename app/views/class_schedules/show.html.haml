@@ -1,2 +1,27 @@
-%h1 ClassSchedules#show
-%p Find me in app/views/class_schedules/show.html.haml
+%p#notice= notice
+
+%p
+  %b Title:
+  = @class_schedule.title
+%p
+  %b Date:
+  = @class_schedule.date
+%p
+  %b Instructor:
+  = @class_schedule.instructor_id
+%p
+  %b Start time:
+  = @class_schedule.start_time
+%p
+  %b End time:
+  = @class_schedule.end_time
+%p
+  %b Spots:
+  = @class_schedule.spots
+%p
+  %b Status:
+  = @class_schedule.status
+
+= link_to 'Edit', edit_class_schedule_path(@class_schedule)
+\|
+= link_to 'Back', class_schedules_path
