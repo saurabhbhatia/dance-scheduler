@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'team/index'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -13,6 +11,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :attendees, except: [:index, :show]
+  resources :team, only: [:index]
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

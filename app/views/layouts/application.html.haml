@@ -21,4 +21,22 @@
     -# - else
     -#   = link_to('login', new_user_session_path)
 
+    / Header
+    %header#header
+      / Logo
+      %h1#logo
+        = link_to "MARIGOLD DANCE STUDIO", root_path
+      / Nav
+      %nav#nav
+        %ul
+          %li
+            %a{:href => "#one"} THE STUDIO
+          %li
+            = link_to "TEAM & PROGRAMS", team_index_path 
+          %li
+            = link_to "CLASS SCHEDULE & PRICING"
+          %li
+            %a{:href => "book.html"} RENT THE SPACE
+          %li
+            %a{:href => "#contact"} CONTACT
     = yield
