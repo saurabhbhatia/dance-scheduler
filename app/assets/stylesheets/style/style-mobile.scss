@@ -8,6 +8,7 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
+@media all and (max-width: 736px) and (min-width: 480px) {
 	body {
 		min-width: 320px;
 	}
@@ -205,3 +206,5 @@
 				background-size: contain;
 				opacity: 0.65;
 			}
+
+}

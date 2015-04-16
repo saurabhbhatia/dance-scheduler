@@ -10,8 +10,7 @@ class AttendeesController < ApplicationController
     @attendee = @class_schedule.attendees.new(attendee_params)
     respond_to do |format|
       if @attendee.save
-        format.html { redirect_to @attendee, notice: 'Attendee was successfully created.' }
-        format.json { render :show, status: :created, location: @attendee }
+        format.html { redirect_to class_schedules_path, notice: 'Attendee was successfully created.' }
       else
         format.html { render :new }
         format.json { render json: @attendee.errors, status: :unprocessable_entity }

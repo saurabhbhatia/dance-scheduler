@@ -2,15 +2,23 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "keywords"}/
     %title Marigold Dance Studio - Studio, New Jersey
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %noscript
+      %link{:href => "css/skel.css", :rel => "stylesheet"}/
+      %link{:href => "css/style.css", :rel => "stylesheet"}/
+      %link{:href => "css/style-wide.css", :rel => "stylesheet"}/
+      %link{:href => "css/style-normal.css", :rel => "stylesheet"}/
     = csrf_meta_tags
+
   %body
-    - if user_signed_in?
-      = current_user.email
-      = link_to('logout', destroy_user_session_path)
-    - else
-      = link_to('login', new_user_session_path)
+    -# - if user_signed_in?
+    -#   = current_user.email
+    -#   = link_to('logout', destroy_user_session_path)
+    -# - else
+    -#   = link_to('login', new_user_session_path)
 
     = yield
