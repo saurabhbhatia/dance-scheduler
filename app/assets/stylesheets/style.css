@@ -10,7 +10,12 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
- *= require style
+ *= require style/font-awesome.min
+ *= require style/skel
+ *= require style/style
+ *= require style/style-normal
+ *= require style/style-wide
+ *= require style/style-narrow
+ *= require style/style-narrower 
+ *= require style/style-mobile
  */
