@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @instructor.name
+
+%p
+  %b Title:
+  = @instructor.title
+%p
+  %b Bio:
+  = @instructor.bio.html_safe
+
+
+
+= link_to 'Edit', edit_instructor_path(@instructor)
+\|
+= link_to 'Back', instructors_path

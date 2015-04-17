@@ -1,0 +1,23 @@
+%h1 Instructors
+%table 
+  %thead
+    %tr
+      %th Name
+      %th Title
+      %th Bio
+      %th
+      %th
+      %th
+
+  %tbody
+    - @instructors.each do |instructor|
+      %tr
+        %td= instructor.name
+        %td= instructor.title
+        %td= instructor.bio
+        %td= link_to 'Details', instructor
+        %td= link_to 'Edit', edit_instructor_path(instructor)
+        %td= link_to 'Destroy', instructor, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+= link_to 'New instructor', new_instructor_path

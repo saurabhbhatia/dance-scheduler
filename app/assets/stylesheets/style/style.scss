@@ -897,6 +897,7 @@
 
 	body {
 		text-decoration: none;
+		background: url('http://res.cloudinary.com/drg9hguhu/image/upload/v1429266546/tex2res4_ymmzzy.png') repeat;
 	}
 
 		body:before {
@@ -942,7 +943,6 @@
 			-o-animation: overlay-hide 1.5s ease-in forwards !important;
 			-ms-animation: overlay-hide 1.5s ease-in forwards !important;
 			animation: overlay-hide 1.5s ease-in forwards !important;
-			background: #ffffff;
 			content: '';
 			display: block;
 			height: 100%;
@@ -1135,15 +1135,6 @@
 	}
 
 	#team-intro {
-		background: url('http://res.cloudinary.com/drg9hguhu/image/upload/v1429266546/tex2res4_ymmzzy.png') repeat;
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
-		font-family: 'sinkin_sans100_thin';
-	}
-
-	#schedule {
 		background: url('http://res.cloudinary.com/drg9hguhu/image/upload/v1429266546/tex2res4_ymmzzy.png') repeat;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
@@ -1485,7 +1476,7 @@
 	}
 	table {
 		color:#666;
-		font-size:12px;
+		font-size:20px;
 		text-shadow: 1px 1px 0px #fff;
 		background:#eaebec;
 		margin:20px;

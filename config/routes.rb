@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   resources :attendees, except: [:index, :show]
   resources :team, only: [:index]
+
+  resources :instructors
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
