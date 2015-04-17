@@ -56,6 +56,6 @@ class ClassSchedulesController < ApplicationController
   end
 
   def class_schedule_params
-    params.require(:class_schedule).permit(:title, :date, :instructor_id, :status, :spots, :start_time, :end_time)
+    params.require(:class_schedule).permit(:title, :date, :instructor_id, :status, :spots, :start_time, :end_time, :detail)
   end
 end

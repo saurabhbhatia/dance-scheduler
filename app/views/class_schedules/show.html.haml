@@ -8,7 +8,11 @@
   = @class_schedule.date
 %p
   %b Instructor:
-  = @class_schedule.instructor_id
+  = @class_schedule.instructor.name
+%p
+  %b Instructor:
+  = @class_schedule.instructor.bio
+
 %p
   %b Start time:
   = @class_schedule.start_time
@@ -19,8 +23,9 @@
   %b Spots:
   = @class_schedule.spots
 %p
-  %b Status:
-  = @class_schedule.status
+  %b Detail:
+  = @class_schedule.detail
+
 
 %p
   %b Attendees
