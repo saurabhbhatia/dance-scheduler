@@ -119,14 +119,14 @@
 
 /* sections */
 	#one {
-		background: asset-data-url('overlay.png'), asset-data-url('Section2MockUp.jpg');
+		background: asset-data-url('overlay.png'), url('http://res.cloudinary.com/drg9hguhu/image/upload/v1429271440/Section2MockUp_lvf3uo.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 
 	#two {
-		background: asset-data-url('overlay.png'), asset-data-url('Section3MockUp.jpg');
+		background: asset-data-url('overlay.png'), url('http://res.cloudinary.com/drg9hguhu/image/upload/v1429271439/Section3MockUp_xxk0ku.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
