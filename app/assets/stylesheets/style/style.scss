@@ -185,8 +185,15 @@
 
 	.team-container {
 	    width:100%;
-	    border:1px solid #d3d3d3;
+	    border:1px solid #000;
+	    font-size: 16px;
+	    background: #000;
+	    margin-bottom: 3%;
 	}
+	.team-container:after {
+        content: '\000A';
+        white-space: pre;
+    }
 	.team-container div {
 	    width:100%;
 	}
@@ -198,14 +205,27 @@
 	.team-container .team-header img {
 		float: left;
 		border-radius: 50%;
+		position: absolute;
+		left: 0;
+		z-index: 1;
+		padding: 1%;
+		margin-top: 2%;
 	}
 	.team-container .team-header> span:first-child + span {
 	    float:right;
 	}
 	.team-container .team-content {
-	    display: none;
+	    display: block;
 	    padding : 5px;
 	 	background: rgba(0, 0, 0,.7);
+	 	text-align: left;
+	 	position: relative;
+	 	padding: 5px 5px 5px 25%;
+	 	z-index: 0;
+	}
+
+	.team-container .team-content + [data-readmore-toggle], selector[data-readmore] {
+		background: rgba(0, 0, 0,.7);
 	}
 	/* Sections/Article */
 
@@ -1475,7 +1495,7 @@
 		text-decoration:underline;
 	}
 	table {
-		color:#666;
+		color: #000;
 		font-size:20px;
 		text-shadow: 1px 1px 0px #fff;
 		background:#eaebec;

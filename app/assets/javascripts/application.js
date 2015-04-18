@@ -16,3 +16,5 @@
 //= require base
 //= require_tree .
 //= require cloudinary
+//= require jquery.dataTables.min
+//= require readmore.min

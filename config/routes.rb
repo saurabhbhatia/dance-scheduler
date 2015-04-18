@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
-  resources :class_schedules
+  resources :class_schedules, except: [:index]
+
+  get '/schedules' => 'class_schedules#index'
   
   devise_for :users
 
