@@ -1,5 +1,5 @@
 class TeamController < ApplicationController
   def index
-  	@instructors = Instructor.all
+  	@instructors = Instructor.order('created_at DESC')
   end
 end
