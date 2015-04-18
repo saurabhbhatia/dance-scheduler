@@ -4,4 +4,4 @@
 $(document).ready ->
   $('.team-content').readmore
     lessLink: '<a href="#">Read less</a>'
-    collapsedHeight: 225
+    collapsedHeight: 223
