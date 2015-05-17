@@ -186,7 +186,8 @@
 	.team-container {
 	    width:100%;
 	    border:1px solid #000;
-	    font-size: 20px;
+	    border-radius: 10px;
+	    font-size: 18px;
 	    background: #000;
 	    margin-bottom: 3%;
 	    font-family: 'quicksandlight';
@@ -207,17 +208,20 @@
 		float: left;
 		border-radius: 50%;
 		position: absolute;
-		left: 0;
+		left: 3%;
 		z-index: 1;
 		padding: 1%;
-		margin-top: 2%;
+		margin-top: 2.5%;
+		width: 20%;
+		height: 30%;
 	}
+
 	.team-container .team-header> span:first-child + span {
 	    float:right;
 	}
 	.team-container .team-content {
-	    display: block;
-	    padding : 5px;
+	  display: block;
+	  padding : 5px;
 	 	background: rgba(0, 0, 0,.7);
 	 	text-align: left;
 	 	position: relative;
