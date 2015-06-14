@@ -12,7 +12,7 @@
     %p.intro-text
       %strong MARIGOLD DANCE STUDIO
       is a dance and fitness studio. We envision Marigold as a platform for all of our members and students to receive the best guidance at leading outlooks full of creativity and vivacity. Marigold offers programs and daily classes featuring a wide spectrum of dance and fitness disciplines.
-  = link_to "#two", "Next"
+  %a.button.style2.down.anchored{:href => "#two"} Next
 / Two
 %section#two.main.style2.center.dark.fullscreen
   .content.box.style2.fade-in.one
@@ -56,13 +56,13 @@
         .contact-details
           %strong Address :
           %br/
-          485 U.S. Rte 1 Woodbridge Township,NJ 08830
+          485 U.S. 1, Edison, NJ 08817, USA 08830
           %br/
           %strong Phone :
           %a{:href => "tel:+16093563913"} +1 (609) 356-3913
           %br/
           %strong Email :
-          %a{:href => "mailto:marigolddancestudio@gmail.com?Subject=Inquiry"} marigolddancestudio@gmail.com
+          %a{:href => "mailto:marigolddancestudio@gmail.com?Subject=Inquiry"} contact@marigolddancestudio.com
           %br/
           %ul.actions
             %li
@@ -74,23 +74,24 @@
             %li
               %a.icon.fa-instagram{:href => "https://instagram.com/marigolddancestudio/", :target => "blank"}
                 %span.label Instagram
-    %p You can also email us, just fill out the form below :
-    .box.container{:class => "75%"}
-      / Contact Form
-      %form{:action => "#", :method => "post"}
-        .row{:class => "50%"}
-          .6u
-            %input{:name => "name", :placeholder => "Name", :type => "text"}/
-          .6u
-            %input{:name => "email", :placeholder => "Email", :type => "email"}/
-        .row{:class => "50%"}
-          .12u
-            %textarea{:name => "message", :placeholder => "Message", :rows => "6"}
-        .row
-          .12u
-            %ul.actions
-              %li
-                %input{:type => "submit", :value => "Send Message"}/
+    .contact-form
+      %p You can also email us, just fill out the form below :
+      .box.container{:class => "75%"}
+        / Contact Form
+        %form{:action => "#", :method => "post"}
+          .row{:class => "50%"}
+            .6u
+              %input{:name => "name", :placeholder => "Name", :type => "text"}/
+            .6u
+              %input{:name => "email", :placeholder => "Email", :type => "email"}/
+          .row{:class => "50%"}
+            .12u
+              %textarea{:name => "message", :placeholder => "Message", :rows => "6"}
+          .row
+            .12u
+              %ul.actions
+                %li
+                  %input{:type => "submit", :value => "Send Message"}/
 / Footer
 %footer#footer
   / Icons
@@ -121,7 +122,7 @@
       zoom: 17,
       center: myLatlng
     }
-    var contentString = "<div class='info-box'><strong>Marigold Dance Studio</strong><br/>485 U.S. Rte 1 Woodbridge Township,NJ 08830 USA</div>";
+    var contentString = "<div class='info-box'><strong>Marigold Dance Studio</strong><br/>485 U.S. 1, Edison, NJ 08817, USA 08830</div>";
     var infowindow = new google.maps.InfoWindow({
         content: contentString
     });

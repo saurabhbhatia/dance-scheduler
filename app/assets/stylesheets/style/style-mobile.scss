@@ -24,6 +24,12 @@
 	}
 
 	/* Box */
+		.intro-box {
+			margin-top: -30%;
+			.intro-text {
+				margin-top: -15%;
+			}
+		}
 
 		.box {
 			padding: 1em;
@@ -114,13 +120,13 @@
 
 	.intro-text {
 		color: white;
-		font-size: 1.4em;
+		font-size: .9em;
 	}
 
 /* sections */
 	#one {
 		background: asset-data-url('overlay.png'), url('http://res.cloudinary.com/drg9hguhu/image/upload/v1429271440/Section2MockUp_lvf3uo.jpg');
-		background-size: 256px 256px, cover;
+		background-size: 128px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
@@ -135,21 +141,22 @@
 	#map-canvas {
       width: 320px;
       height: 400px;
+      margin-left: -1.5%;
     }
 
     .info-box {
-      width: 305px;
+      width: 310px;
       height: 100px;
       color: #000;
     }
 
     .contact-details {
-      width: 320px;
-      height: 300px;
-      float: none;
-      text-align: left;
-      padding-left: 3%;
+    	display: hidden;
     }
+
+   .contact-form {
+   	margin-top: 30%;
+   }
 
 	.team-container {
 	    width:100%;

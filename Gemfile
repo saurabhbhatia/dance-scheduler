@@ -21,6 +21,10 @@ gem 'cancancan'
 gem 'draper'
 gem 'pundit'
 
+gem 'bourbon'
+gem 'neat'
+gem 'ionicons-rails'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -47,6 +51,10 @@ gem 'rails_12factor', group: :production
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'carrierwave'
 gem 'mini_magick'
+
+#deployment stuff
+gem 'mina'
+gem 'mina-multistage', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
