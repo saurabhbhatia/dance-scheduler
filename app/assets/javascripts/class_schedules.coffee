@@ -3,7 +3,8 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).ready ->
-  $('#schedule').dataTable 'order': [ [
+  $('#schedule').dataTable 
+  'order': [ [
     2
     'desc'
   ] ]

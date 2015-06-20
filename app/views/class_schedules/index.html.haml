@@ -1,11 +1,11 @@
-%h1 Schedule
 %table#schedule.display{:cellspacing => "0", :width => "100%"}
+  %h1 Schedule
   %thead
     %tr
       %th Title
       %th Date
       %th Instructor
-      %th Instructor Bio
+      %th Class Detail
       %th Start time
       %th End time
       %th No. of Spots
@@ -21,11 +21,11 @@
         %td= class_schedule.title
         %td= class_schedule.date.strftime("%d-%m-%Y") 
         %td= class_schedule.instructor.name
-        %td= class_schedule.instructor.bio.html_safe
+        %td= truncate(class_schedule.detail, omission: "...read more", length: 100).html_safe
         %td= class_schedule.start_time.strftime("%H:%M") 
         %td= class_schedule.end_time.strftime("%H:%M")
         %td= class_schedule.spots
-        %td= link_to 'Book Now', new_attendee_path(class_schedule_id: class_schedule.id)
+        %td= link_to 'Book', new_attendee_path(class_schedule_id: class_schedule.id)
         %td= link_to 'Details', class_schedule
         - if user_signed_in?
           %td= link_to 'Edit', edit_class_schedule_path(class_schedule)
