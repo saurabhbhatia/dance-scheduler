@@ -1489,6 +1489,10 @@
 			}
 
  	/*****Table*****/
+ 	.table-title {
+ 		text-align: center;
+ 	}
+
 	table a:link {
 		color: #fff;
 		font-weight: bold;
@@ -1506,7 +1510,7 @@
 	}
 	table {
 		color: #fff;
-		font-size:20px;
+		font-size:16px;
 		background:#000;
 		margin:20px;
 		border:#000 1px solid;
