@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   resources :team, only: [:index]
 
   resources :instructors
+  resources :rent
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -19,3 +19,4 @@
 //= require jquery.dataTables.min
 //= require datatables.responsive
 //= require readmore.min
+//= require jquery.bxslider
