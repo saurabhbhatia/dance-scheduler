@@ -27,10 +27,3 @@
         %td= class_schedule.spots
         %td= link_to 'Book', new_attendee_path(class_schedule_id: class_schedule.id)
         %td= link_to 'Details', class_schedule
-        - if user_signed_in?
-          %td= link_to 'Edit', edit_class_schedule_path(class_schedule)
-          %td= link_to 'Destroy', class_schedule, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-- if user_signed_in?
-  = link_to 'New class_schedule', new_class_schedule_path
