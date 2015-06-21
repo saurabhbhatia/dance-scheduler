@@ -195,6 +195,73 @@
 	 	z-index: 0;
 	}
 
+	/* Table */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	table {
+		width: 90%;
+	}
+
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+	
+		left: -9999px;
+	}
+table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	table td:first-child {
+    border-left: 0 none;
+    padding-left: 35%;
+    text-align: left;
+	}
+
+	table td {
+		padding: 5px 0 15px 50px;
+	}
+
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 28%; 
+		padding-right: 30px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Title"; }
+	td:nth-of-type(2):before { content: "Date"; }
+	td:nth-of-type(3):before { content: "Instructor"; }
+	td:nth-of-type(4):before { content: "Class detail"; }
+	td:nth-of-type(5):before { content: "Start time"; }
+	td:nth-of-type(6):before { content: "End time"; }
+	td:nth-of-type(7):before { content: "No. of spots"; }
+	td:nth-of-type(8):before { content: ""; }
+	td:nth-of-type(9):before { content: ""; }
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
