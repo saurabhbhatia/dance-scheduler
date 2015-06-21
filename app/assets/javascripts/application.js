@@ -14,9 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require base
-//= require_tree .
 //= require cloudinary
 //= require jquery.dataTables.min
 //= require datatables.responsive
 //= require readmore.min
 //= require jquery.backstretch.min
+//= require_tree .

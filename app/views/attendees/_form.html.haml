@@ -1,4 +1,4 @@
-= form_for @attendee do |f|
+= form_for @attendee, html: {class: "attendee-form"} do |f|
   - if @attendee.errors.any?
     #error_explanation
       %h2= "#{pluralize(@attendee.errors.count, "error")} prohibited this attendee from being saved:"
@@ -14,7 +14,19 @@
     = f.email_field :email
 
   .field
+    = f.label :age
+    = f.number_field :age
+
+  .field
+    = f.label :message
+    = f.cktext_area :message
+
+  .field
     - @class_schedule = params[:class_schedule_id].to_i
     = hidden_field_tag "class_schedule_id", @class_schedule
-  .actions
-    = f.submit 'Save'
+
+  .g-recaptcha{"data-sitekey" => "#{@recaptcha_key}"}
+
+  %form{:action => "", :method => "POST"}
+    %script.stripe-button{"data-amount" => "2000", "data-description" => "2 widgets ($20.00)", "data-image" => "/128x128.png", "data-key" => "#{@api_key}", "data-name" => "Demo Site", :src => "https://checkout.stripe.com/checkout.js"}
+      :cdata

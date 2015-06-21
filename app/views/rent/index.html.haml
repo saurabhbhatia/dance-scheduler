@@ -1,7 +1,7 @@
 %section#rent-intro.main.style1.dark.fullscreen
   .content.container{:class => "75%"}
     %header
-      %h2 We have a beautiful space, use it as your own.
+      %h2 WE HAVE A BEAUTIFUL SPACE, USE IT AS YOUR OWN.
     %footer
       %a.button.style2.down{:href => "#rent-one"} More
 / One
@@ -10,3 +10,12 @@
     %p.intro-text
       With plenty of natural light, floor-to-ceiling mirrors and bamboo wood sprung flooring, our studio is a elegant, calm and inviting space. Perfect for your dance rehearsals, shoots, auditions, and other special events. 
   %a.button.style2.down.anchored{:href => "#two"} Next
+
+  :coffee
+    $(document).ready ->
+    $('#rent-intro').backstretch [
+      'http://res.cloudinary.com/drg9hguhu/image/upload/v1429329479/4_d7mabb.jpg'
+      'http://res.cloudinary.com/drg9hguhu/image/upload/v1429329638/3_y9d2wp.jpg'
+      'http://res.cloudinary.com/drg9hguhu/image/upload/v1429266583/FLP_8580_Ghungroo_xsy3ku.jpg'
+      'http://res.cloudinary.com/drg9hguhu/image/upload/v1429329615/1_eloubr.jpg'
+    ], duration: 3000, fade: "slow"

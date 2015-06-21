@@ -14,7 +14,6 @@ class ClassSchedulesController < ApplicationController
 
   def create
     @class_schedule = ClassSchedule.new(class_schedule_params)
-
     respond_to do |format|
       if @class_schedule.save
         format.html { redirect_to @class_schedule, notice: 'Class Schedule was successfully created.' }

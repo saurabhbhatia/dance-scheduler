@@ -184,7 +184,7 @@
 	}
 
 	.team-container {
-	    width:100%;
+	    width:125%;
 	    border:1px solid #000;
 	    border-radius: 10px;
 			-moz-border-radius:10px;
@@ -194,6 +194,7 @@
 	    background: #000;
 	    margin-bottom: 3%;
 	    font-family: 'quicksandlight';
+	    margin-left: -12%;
 	}
 	.team-container:after {
         content: '\000A';
@@ -214,7 +215,7 @@
 		-webkit-border-radius:50%;
 
 		position: absolute;
-		left: 12%;
+		left: 5%;
 		z-index: 1;
 		padding: 1%;
 		margin-top: 2.5%;
@@ -1195,7 +1196,6 @@
 	}
 
 	#team-intro {
-		background: url('http://res.cloudinary.com/drg9hguhu/image/upload/v1429266546/tex2res4_ymmzzy.png') repeat;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -1521,6 +1521,7 @@
  	/*****Table*****/
  	.table-title {
  		text-align: center;
+ 		margin-top: 3%;
  	}
 
 	table a:link {
