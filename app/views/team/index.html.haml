@@ -16,5 +16,9 @@
             .team-content
               = instructor.bio.html_safe
 
-:javascript
-  $.backstretch("http://res.cloudinary.com/drg9hguhu/image/upload/v1429266615/Marigold8_bwkathak_f71kib.jpg");
+:coffee
+  $(document).ready ->
+    $.backstretch 'http://res.cloudinary.com/drg9hguhu/image/upload/v1429266615/Marigold8_bwkathak_f71kib.jpg'
+    $('.team-content').readmore
+      lessLink: '<a href="#">Read less</a>'
+      collapsedHeight: 223

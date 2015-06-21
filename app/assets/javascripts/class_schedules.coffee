@@ -7,5 +7,5 @@ $(document).ready ->
   'order': [ [
     2
     'desc'
-  ] ]
+  ] ], "pagingType": "full_numbers", "displayLength": 10
   return
