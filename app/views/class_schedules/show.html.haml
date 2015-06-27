@@ -12,10 +12,10 @@
 
   %p
     %b Start time:
-    = @class_schedule.start_time.strftime("%m-%d-%Y") 
+    = @class_schedule.start_time.strftime("%H:%M") 
   %p
     %b End time:
-    = @class_schedule.end_time.strftime("%m-%d-%Y") 
+    = @class_schedule.end_time.strftime("%H:%M") 
   %p
     %b Spots:
     = @class_schedule.spots
