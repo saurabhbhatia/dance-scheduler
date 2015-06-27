@@ -1,37 +1,23 @@
-%p#notice= notice
+.class-details
+  %p#notice= notice
 
-%p
-  %b Title:
-  = @class_schedule.title
-%p
-  %b Date:
-  = @class_schedule.date
-%p
-  %b Instructor:
-  = @class_schedule.instructor.name
-%p
-  %b Instructor:
-  = @class_schedule.instructor.bio
+  %h2.center
+    = @class_schedule.title
+  %p
+    %b Date:
+    = @class_schedule.date.strftime("%m-%d-%Y") 
+  %p
+    %b Instructor:
+    = @class_schedule.instructor.name
 
-%p
-  %b Start time:
-  = @class_schedule.start_time
-%p
-  %b End time:
-  = @class_schedule.end_time
-%p
-  %b Spots:
-  = @class_schedule.spots
-%p
-  %b Detail:
-  = @class_schedule.detail
-
-
-%p
-  %b Attendees
-  - @class_schedule.attendees.each do |attendee|
-    = attendee.name
-
-= link_to 'Edit', edit_class_schedule_path(@class_schedule)
-\|
-= link_to 'Back', class_schedules_path
+  %p
+    %b Start time:
+    = @class_schedule.start_time.strftime("%m-%d-%Y") 
+  %p
+    %b End time:
+    = @class_schedule.end_time.strftime("%m-%d-%Y") 
+  %p
+    %b Spots:
+    = @class_schedule.spots
+  %p
+    = @class_schedule.detail.html_safe

@@ -5,7 +5,6 @@
       %th Title
       %th Date
       %th Instructor
-      %th Class Detail
       %th Start time
       %th End time
       %th No. of Spots
@@ -19,9 +18,8 @@
     - @class_schedules.each do |class_schedule|
       %tr
         %td= class_schedule.title
-        %td= class_schedule.date.strftime("%d-%m-%Y") 
+        %td= class_schedule.date.strftime("%m-%d-%Y") 
         %td= class_schedule.instructor.name
-        %td= truncate(class_schedule.detail, omission: "...read more", length: 100).html_safe
         %td= class_schedule.start_time.strftime("%H:%M") 
         %td= class_schedule.end_time.strftime("%H:%M")
         %td= class_schedule.spots
