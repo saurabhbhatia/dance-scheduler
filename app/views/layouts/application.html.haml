@@ -30,7 +30,7 @@
       %nav#nav
         %ul
           %li
-            %a{:href => "#one"} THE STUDIO
+            %a{:href => "#{root_path}#one"} THE STUDIO
           %li
             = link_to "TEAM & PROGRAMS", team_index_path 
           %li
@@ -38,5 +38,5 @@
           %li
             = link_to "RENT THE SPACE", rent_index_path
           %li
-            %a{:href => "#contact"} CONTACT
+            %a{:href => "#{root_path}#contact"} CONTACT
     = yield
