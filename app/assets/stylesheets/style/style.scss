@@ -1613,6 +1613,10 @@
 				text-decoration:none;
 		}
 	}
+  
+  .center {
+  	text-align: center;
+  }
 
 	.class-details {
  		background: #000 none repeat scroll 0 0;
@@ -1629,8 +1633,25 @@
     padding-left: 3%;
     padding-right: 3%;
     width: 91%;
-    .center {
-    	text-align: center;
+	}
+
+	.attendee-form {
+ 		background: #000 none repeat scroll 0 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;	
+    font-family: "quicksandlight";
+    font-size: 18px;
+    height: 94%;
+    margin-left: 5%;
+    margin-top: 0%;
+    overflow: scroll;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 91%;
+    .captacha {
+    	margin-top: 1%;
     }
 	}
 

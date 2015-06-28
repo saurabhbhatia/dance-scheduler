@@ -4,20 +4,25 @@
   %h2.center
     = @class_schedule.title
   %p
-    %b Date:
+    %strong
+      Date:
     = @class_schedule.date.strftime("%m-%d-%Y") 
   %p
-    %b Instructor:
+    %strong
+      Instructor:
     = @class_schedule.instructor.name
 
   %p
-    %b Start time:
+    %strong 
+      Start time:
     = @class_schedule.start_time.strftime("%H:%M") 
   %p
-    %b End time:
+    %strong
+      End time:
     = @class_schedule.end_time.strftime("%H:%M") 
   %p
-    %b Spots:
+    %strong
+      Spots:
     = @class_schedule.spots
   %p
     = @class_schedule.detail.html_safe
