@@ -474,7 +474,9 @@
 	/* Table */
 
 		table {
-			width: 97%;
+			width: 90%;
+			margin-top: 2%;
+			margin-left: 5%;
 		}
 
 			table.default {
@@ -1535,17 +1537,19 @@
 		text-decoration:none;
 	}
 	table a:active,
-	table a:hover {
+	table a:hover,
+	table a:visited:active,
+	table a:visited:hover {
 		color: #000;
 		text-decoration:underline;
+		font-weight: bold;
 	}
 	table {
 		color: #fff;
 		font-size:16px;
 		background:#000;
-		margin:20px;
 		border:#000 1px solid;
-
+		opacity: .8;
 		-moz-border-radius:5px;
 		-webkit-border-radius:5px;
 		border-radius:5px;
@@ -1618,6 +1622,10 @@
   	text-align: center;
   }
 
+  .top-space {
+  	margin-top: 3%;
+  }
+
 	.class-details {
  		background: #000 none repeat scroll 0 0;
     border: 1px solid #000;
@@ -1632,7 +1640,7 @@
     overflow: scroll;
     padding-left: 3%;
     padding-right: 3%;
-    width: 91%;
+    width: 85%;
 	}
 
 	.attendee-form {

@@ -9,7 +9,6 @@
       %th End time
       %th No. of Spots
       %th
-      %th
 
   %tbody
     - @class_schedules.each do |class_schedule|
@@ -21,7 +20,6 @@
         %td= class_schedule.end_time.strftime("%H:%M")
         %td= class_schedule.spots
         %td= link_to 'Book', new_attendee_path(class_schedule_id: class_schedule.id)
-        %td= link_to 'Details', class_schedule
 
 :javascript
   $.backstretch("http://res.cloudinary.com/drg9hguhu/image/upload/v1429266588/Marigold5_BN_infvdw.jpg");

@@ -5,6 +5,34 @@
       %ul
         - @attendee.errors.full_messages.each do |msg|
           %li= msg
+  %h2.center
+    = @class_schedule.title
+  %p
+    %strong
+      Date:
+    = @class_schedule.date.strftime("%m-%d-%Y") 
+  %p
+    %strong
+      Instructor:
+    = @class_schedule.instructor.name
+
+  %p
+    %strong 
+      Start time:
+    = @class_schedule.start_time.strftime("%H:%M") 
+  %p
+    %strong
+      End time:
+    = @class_schedule.end_time.strftime("%H:%M") 
+  %p
+    %strong
+      Spots:
+    = @class_schedule.spots
+  %p
+    %strong
+      Details:
+    %br
+    = @class_schedule.detail.html_safe
 
   .field
     = f.label :name
