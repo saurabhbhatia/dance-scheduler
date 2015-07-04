@@ -2,6 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready ->
-  $(".mobile-nav").click ->
+  $(".mobile-nav").click (event) ->
     event.stopPropagation()
     $("#nav ul").toggle()
+  $(document).click ->
+    $("#nav ul").hide()
