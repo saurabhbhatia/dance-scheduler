@@ -3,4 +3,5 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready ->
   $(".mobile-nav").click ->
+    event.stopPropagation()
     $("#nav ul").toggle()
