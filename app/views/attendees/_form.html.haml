@@ -29,6 +29,9 @@
       Spots:
     = @class_schedule.spots
   %p
+    Price:
+    = number_to_currency(@class_schedule.price)
+  %p
     %strong
       Details:
     %br
@@ -56,6 +59,6 @@
   .captacha
     .g-recaptcha{"data-sitekey" => "#{@recaptcha_key}"}
 
-  %form{:action => "", :method => "POST"}
-    %script.stripe-button{"data-amount" => "2000", "data-description" => "2 widgets ($20.00)", "data-image" => "/128x128.png", "data-key" => "#{@api_key}", "data-name" => "Demo Site", :src => "https://checkout.stripe.com/checkout.js"}
+  %form{:action => "/charge", :method => "POST"}
+    %script.stripe-button{"data-amount" => "#{@price.to_i}", "data-description" => "Class Payment", "data-image" => "/img/documentation/checkout/marketplace.png", "data-key" => "#{@api_key}", "data-name" => "Marigold Dance Studio", :src => "https://checkout.stripe.com/checkout.js"}
       :cdata
