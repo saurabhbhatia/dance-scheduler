@@ -20,3 +20,4 @@
 //= require readmore.min
 //= require jquery.backstretch.min
 //= require_tree .
+//= require ckeditor/config
