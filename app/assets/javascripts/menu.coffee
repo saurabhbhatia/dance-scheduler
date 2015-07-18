@@ -1,6 +1,3 @@
 $(document).ready ->
-  $(".mobile-nav").click (event) ->
-    event.stopPropagation()
+  $("#mobile-nav").click (event) ->
     $("#nav ul").toggle()
-  $(document).click ->
-    $("#nav ul").hide()

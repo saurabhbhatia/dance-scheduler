@@ -1093,6 +1093,9 @@
 		top: 0;
 		height: 3em;
 		line-height: 3em;
+		#mobile-nav {
+			display: none;
+		}
 	}
 
 		#nav ul {
@@ -1115,6 +1118,10 @@
 					padding: 0 0.5em 0 0.5em;
 					outline: 0;
 				}
+
+	.mobile-menu {
+		display: block;
+	}
 
 	.intro-text {
 	  font-size: 1.2em;
