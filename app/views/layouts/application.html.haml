@@ -42,3 +42,8 @@
           %li
             %a{:href => "#{root_path}#contact"} CONTACT
     = yield
+
+:coffee
+  $(document).ready ->
+    $("#mobile-nav").click (event) ->
+      $("#nav ul").toggle()
