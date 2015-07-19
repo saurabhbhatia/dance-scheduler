@@ -11,6 +11,9 @@
 @media screen and (max-width: 736px) {
 	body {
 		min-width: 320px;
+		font-smooth: always;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: auto;
 	}
 
 	body,input,textarea,select {
@@ -21,6 +24,11 @@
 	h2 {
 		font-size: 1.5em;
 		letter-spacing: -1px;
+	}
+
+	h3 {
+		font-size: 1.5em;
+		font-weight: bold;
 	}
 
 	/* Box */
@@ -162,6 +170,14 @@
 	.intro-text {
 		color: white;
 		font-size: .9em;
+	}
+	
+
+	#team-intro {
+		background-size: 64px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: center center, center center;
+		font-family: 'sinkin_sans100_thin';
 	}
 
 /* sections */

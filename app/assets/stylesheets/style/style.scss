@@ -1149,16 +1149,14 @@
 		background: asset-data-url('overlay.png'), url('http://res.cloudinary.com/drg9hguhu/image/upload/v1429266572/FLP_8611_fc9l73.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+		background-position: top left, center center;
 		font-family: 'sinkin_sans100_thin';
 	}
 
 	#rent-intro {
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+		background-position: top left, center center;
 		font-family: 'sinkin_sans100_thin';
 	}
 
@@ -1216,8 +1214,7 @@
 	#team-intro {
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+		background-position: top left, center center;
 		font-family: 'sinkin_sans100_thin';
 	}
 
