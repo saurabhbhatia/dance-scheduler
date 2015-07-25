@@ -3,7 +3,6 @@ class AttendeesController < ApplicationController
   def new
     @class_schedule = ClassSchedule.find(params[:class_schedule_id])
     @attendee = @class_schedule.attendees.new
-    @price = @class_schedule.price * 100
   end
 
   def create
