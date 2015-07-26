@@ -9,3 +9,10 @@ $(document).ready ->
     'desc'
   ] ], "pagingType": "full_numbers", "displayLength": 10
   return
+
+  $('#pricing').dataTable 
+  'order': [ [
+    2
+    'desc'
+  ] ], "pagingType": "full_numbers", "displayLength": 10
+  return

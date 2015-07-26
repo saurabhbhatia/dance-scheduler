@@ -57,6 +57,5 @@
   .captacha
     .g-recaptcha{"data-sitekey" => "#{@recaptcha_key}"}
 
-  %form{:action => "/charge", :method => "POST"}
-    %script.stripe-button{"data-amount" => "#{@price.to_i}", "data-description" => "Class Payment", "data-image" => "/img/documentation/checkout/marketplace.png", "data-key" => "#{@api_key}", "data-name" => "Marigold Dance Studio", :src => "https://checkout.stripe.com/checkout.js"}
-      :cdata
+  %p
+    %a.btn.btn-box{:href => ""} Save Attendance
