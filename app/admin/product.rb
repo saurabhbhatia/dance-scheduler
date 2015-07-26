@@ -5,9 +5,10 @@ ActiveAdmin.register Product do
       f.input :price,label: "Price"
       f.input :description, as: :ckeditor, label: "Description", toolbar: 'mini'
       f.input :status, as: :select, collection: Product.statuses.keys, label: "Status"
+      f.input :product_type, as: :select, collection: Product::TYPES, label: "Product Type"
     end
     f.actions
   end
 
-  permit_params :name, :description, :price, :status
+  permit_params :name, :description, :price, :status, :product_type
 end
