@@ -6,7 +6,7 @@ class ClassSchedulesController < ApplicationController
   end
 
   def index
-    @class_schedules = ClassSchedule.order('created_at DESC')
+    @class_schedules = ClassSchedule.order("day asc")
     @products = Product.active 
   end
 

@@ -22,6 +22,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'draper'
 gem 'pundit'
+gem 'groupdate'
 
 gem 'bourbon'
 gem 'neat'

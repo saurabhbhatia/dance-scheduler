@@ -3,45 +3,47 @@
   %thead
     %tr
       %th Title
-      %th Date
+      %th Day
       %th Instructor
       %th Start time
       %th End time
-      %th No. of Spots
-      %th
+      -# %th No. of Spots
+      %th Note
 
   %tbody
     - @class_schedules.each do |class_schedule|
       %tr
         %td= class_schedule.title
-        %td= class_schedule.date.strftime("%m-%d-%Y") 
+        -# %td= class_schedule.date.strftime("%m-%d-%Y") 
+        %td= class_schedule.day
         %td= class_schedule.instructor.name
         %td= class_schedule.start_time.strftime("%H:%M") 
         %td= class_schedule.end_time.strftime("%H:%M")
-        %td= class_schedule.spots
-        %td= link_to 'Book', new_attendee_path(class_schedule_id: class_schedule.id)
+        %td= class_schedule.note.html_safe if class_schedule.note
+        -# %td= class_schedule.spots
+        -# %td= link_to 'Book', new_attendee_path(class_schedule_id: class_schedule.id)
 
-%h2.table-title PRICING
-%table#pricing.display{:cellspacing => "0", :width => "100%"}
-  %thead
-    %tr
-      %th Name
-      %th Description
-      %th Price
-      %th Product Type
-      %th
+-# %h2.table-title PRICING
+-# %table#pricing.display{:cellspacing => "0", :width => "100%"}
+-#   %thead
+-#     %tr
+-#       %th Name
+-#       %th Description
+-#       %th Price
+-#       %th Product Type
+-#       %th
 
-  %tbody
-    - @products.each do |product|
-      %tr
-        %td= product.name
-        %td= product.desciption
-        %td= product.price
-        %td= product.product_type
-        %td
-          %form{:action => "/charge", :method => "POST"}
-            %script.stripe-button{"data-amount" => "#{product.price.to_i}", "data-description" => "#{product.name}", "data-image" => "/img/documentation/checkout/marketplace.png", "data-key" => "#{@api_key}", "data-name" => "Marigold Dance Studio", :src => "https://checkout.stripe.com/checkout.js"}
-              :cdata
+-#   %tbody
+-#     - @products.each do |product|
+-#       %tr
+-#         %td= product.name
+-#         %td= product.desciption
+-#         %td= product.price
+-#         %td= product.product_type
+-#         %td
+-#           %form{:action => "/charge", :method => "POST"}
+-#             %script.stripe-button{"data-amount" => "#{product.price.to_i}", "data-description" => "#{product.name}", "data-image" => "/img/documentation/checkout/marketplace.png", "data-key" => "#{@api_key}", "data-name" => "Marigold Dance Studio", :src => "https://checkout.stripe.com/checkout.js"}
+-#               :cdata
 
 :javascript
   $.backstretch("http://res.cloudinary.com/drg9hguhu/image/upload/v1429266588/Marigold5_BN_infvdw.jpg");
