@@ -3,7 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 jQuery ($) ->
   $('#contact-form').submit ->
-    $('meta[name="csrf-token"]')
     email = $('#email').val()
     # get email field value
     name = $('#name').val()
@@ -23,7 +22,7 @@ jQuery ($) ->
           'subject': 'Website Contact Form Submission'
           'text': name + phone + msg 
           'to': [ {
-            'email': 'saurabh.a.bhatia@gmail.com'
+            'email': 'contact@marigolddancestudio.com'
             'name': ''
             'type': 'to'
           } ]).done((response) ->
