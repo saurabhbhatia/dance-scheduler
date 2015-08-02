@@ -4,4 +4,5 @@
 //= require base/jquery.poptrox.min
 //= require base/jquery.scrollex.min
 //= require base/jquery.scrolly.min
+//= require base/jquery.modal.min
 //= require menu
