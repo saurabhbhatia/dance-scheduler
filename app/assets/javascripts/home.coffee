@@ -20,7 +20,7 @@ jQuery ($) ->
           'from_name': name
           'headers': 'Reply-To': email
           'subject': 'Website Contact Form Submission'
-          'text': phone + " "  + name + " " + msg 
+          'text': name + phone + msg 
           'to': [ {
             'email': 'saurabh.a.bhatia@gmail.com'
             'name': ''
