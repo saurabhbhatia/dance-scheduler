@@ -3,6 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 jQuery ($) ->
   $('#contact-form').submit ->
+    $('meta[name="csrf-token"]')
     email = $('#email').val()
     # get email field value
     name = $('#name').val()
