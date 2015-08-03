@@ -41,7 +41,10 @@
           %li
             = link_to "RENT THE SPACE", rent_index_path
           %li
-            %a{:href => "", id: "contact-link"} CONTACT
+            - if controller.controller_name == "home"
+              %a{:href => "#contact"} CONTACT              
+            - else
+              %a{:href => "#", id: "contact-link"} CONTACT
     = yield
 
 :coffee
