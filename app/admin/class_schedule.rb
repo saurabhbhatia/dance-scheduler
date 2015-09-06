@@ -3,7 +3,7 @@ ActiveAdmin.register ClassSchedule do
     f.inputs do
       f.input :title, label: "title"
       # f.input :date, as: :datepicker, label: "Date"
-      f.input :day, as: :select, collection: ClassSchedule::DAYS, label: "Day"
+      f.input :day, as: :select, collection: ClassSchedule.days.keys, label: "Day"
       f.input :spots, as: :number, label: "Spots"
       f.input :detail, as: :ckeditor, label: "Details", toolbar: 'mini'
       f.input :note, as: :ckeditor, label: "Note", toolbar: 'mini'
