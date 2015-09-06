@@ -3,5 +3,5 @@ class ClassSchedule < ActiveRecord::Base
   has_many :attendees
   
   enum status: [:active, :archived, :deleted]
-  enum day: [:sunday, :monday, :tuesday, :wednesday, :thursday, :friday, :saturday]
+  enum day: [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday]
 end
