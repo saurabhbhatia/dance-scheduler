@@ -184,7 +184,7 @@
 	}
 
 	.team-container {
-	    width:125%;
+	    width:127%;
 	    border:1px solid #000;
 	    border-radius: 10px;
 			-moz-border-radius:10px;
@@ -207,6 +207,7 @@
 	    padding: 2px;
 	    cursor: pointer;
 	    font-weight: bold;
+	    margin-top: 1%;
 	}
 	.team-container .team-header img {
 		float: left;
@@ -215,7 +216,7 @@
 		-webkit-border-radius:50%;
 
 		position: absolute;
-		left: 5%;
+		left: 6%;
 		z-index: 1;
 		padding: 1%;
 		margin-top: 2.5%;
@@ -235,6 +236,9 @@
 	 	position: relative;
 	 	padding: 5px 5px 5px 25%;
 	 	z-index: 0;
+	 	p {
+	 		margin-right: 5%;
+	 	}
 	}
 
 	.team-container .team-content + [data-readmore-toggle], selector[data-readmore] {
